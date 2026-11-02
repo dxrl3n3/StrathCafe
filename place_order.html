@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Strathmore University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="order" data-auth="required" data-roles="student">
+    <div id="site-header"></div>
+
+    <main class="container centered-form">
+        <h2>🛒 Place an Order</h2>
+        <div id="message" class="msg-slot"></div>
+
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="menu_id">Choose Item:</label>
+                <select name="menu_id" id="menu_id" required>
+                    <option value="">-- Select an item --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1" max="100" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+
+        <p style="margin-top:1rem;"><a href="dashboard.html" class="back-button">← Back to Dashboard</a></p>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/food.js"></script>
+</body>
+</html>

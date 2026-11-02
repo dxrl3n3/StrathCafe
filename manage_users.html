@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - Strathmore University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="users" data-auth="required" data-roles="admin">
+    <div id="site-header"></div>
+
+    <main class="container">
+        <h2>Manage Users</h2>
+        <div id="message" class="msg-slot"></div>
+
+        <form id="users-search-form" class="toolbar">
+            <input type="text" id="search" placeholder="Search by name or email" style="width:250px;">
+            <select id="status-filter">
+                <option value="">All</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+            <button type="submit" class="submit-btn">Search</button>
+        </form>
+
+        <div id="users-holder"></div>
+        <p style="margin-top:1rem;"><a href="dashboard.html" class="back-button">Back</a></p>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/food.js"></script>
+</body>
+</html>
