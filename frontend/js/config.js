@@ -1,1 +1,1 @@
-window.API_BASE_URL = 'http://localhost:3000/api';
+window.API_BASE_URL = 'https://strathcafe.onrender.com/api';
