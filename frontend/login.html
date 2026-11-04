@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Strathmore University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="login">
+    <div id="site-header"></div>
+
+    <main class="registration-container">
+        <form id="login-form" class="registration-form">
+            <h2>Login to Your Account</h2>
+            <div id="message" class="msg-slot"></div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password" autocomplete="current-password">
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+
+            <p class="login-link">Don't have an account? <a href="registration.html">Register here</a></p>
+        </form>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

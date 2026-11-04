@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Settings - Strathmore University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="settings" data-auth="required" data-roles="admin">
+    <div id="site-header"></div>
+
+    <main class="container">
+        <h2>System Settings</h2>
+        <div id="message" class="msg-slot"></div>
+
+        <form id="settings-form" class="registration-form" style="margin:0 auto;">
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="default_availability" style="width:auto;">
+                    Default availability ON for new menu items
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="maintenance_mode" style="width:auto;">
+                    Enable Maintenance Mode
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="support_email">Support Email</label>
+                <input type="email" id="support_email" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Save Settings</button>
+        </form>
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="dashboard.html" class="back-button">Back to Dashboard</a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/food.js"></script>
+</body>
+</html>
