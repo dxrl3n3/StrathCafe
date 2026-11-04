@@ -1,0 +1,90 @@
+{
+  "nextOrderNumber": 5003,
+  "menu": [
+    {
+      "itemId": "food-1",
+      "itemType": "food",
+      "name": "Chicken Pilau",
+      "price": 350,
+      "available": true
+    },
+    {
+      "itemId": "food-2",
+      "itemType": "food",
+      "name": "Masala Chips",
+      "price": 250,
+      "available": true
+    },
+    {
+      "itemId": "food-3",
+      "itemType": "food",
+      "name": "Beef Samosa (2pcs)",
+      "price": 120,
+      "available": true
+    },
+    {
+      "itemId": "med-101",
+      "itemType": "medicine",
+      "name": "Paracetamol 500mg (strip)",
+      "price": 50,
+      "available": true
+    },
+    {
+      "itemId": "med-102",
+      "itemType": "medicine",
+      "name": "Ibuprofen 400mg (strip)",
+      "price": 120,
+      "available": true
+    },
+    {
+      "itemId": "med-103",
+      "itemType": "medicine",
+      "name": "Oral Rehydration Salts",
+      "price": 60,
+      "available": true
+    },
+    {
+      "itemId": "med-104",
+      "itemType": "medicine",
+      "name": "Amoxicillin 250mg (strip)",
+      "price": 300,
+      "available": false
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-5001",
+      "studentId": "std-8842",
+      "items": [
+        {
+          "itemId": "med-101",
+          "itemType": "medicine",
+          "name": "Paracetamol 500mg (strip)",
+          "quantity": 2,
+          "unitPrice": 50
+        }
+      ],
+      "status": "pending",
+      "total": 100,
+      "createdAt": "2026-11-01T08:00:00.000Z",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "ord-5002",
+      "studentId": "std-8842",
+      "items": [
+        {
+          "itemId": "med-101",
+          "itemType": "medicine",
+          "name": "Paracetamol 500mg (strip)",
+          "quantity": 2,
+          "unitPrice": 50
+        }
+      ],
+      "status": "pending",
+      "total": 100,
+      "createdAt": "2026-11-04T13:33:37.221Z",
+      "updatedAt": "2026-11-04T13:33:37.221Z"
+    }
+  ]
+}
